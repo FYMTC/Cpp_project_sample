@@ -21,7 +21,7 @@ target_link_libraries(main PUBLIC hellolib)
 target_link_libraries(main PUBLIC worldlib)
 
 # 设置 编译测试选项
-option(BUILD_TEST "Builds test!!!" OFF)
+option(BUILD_TEST "Builds test!!!" ON)
 if(BUILD_TEST)
     add_subdirectory(tests)
 endif()
